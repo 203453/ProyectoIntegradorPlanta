@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+header,
+.header {
+    background-color: #0077ff;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.barra-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.nav-menun {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-seccion {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.header .barra .nav-menun .nav-menu-seccion .nav-menu-liga.barra-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.header .barra .nav-menun .nav-menu-seccion .nav-menu-liga.barra-link:hover {
+    background-color: #2a2c35;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    header,
+    .header {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menun {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2a2c35;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(95% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-seccion {
+        line-height: 70px;
+    }
+    
+    .header .barra .nav-menun .nav-menu-seccion .nav-menu-liga:hover,
+    .header .barra .nav-menun .nav-menu-seccion .nav-menu-liga:focus {
+        background: none;
+        color: #091122;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menun_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}

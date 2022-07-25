@@ -1,0 +1,245 @@
+h2{
+    color: #0077ff;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+#main-div div{
+    background-color: rgba(255, 255, 255, 0.397);
+    height: 300px;
+    margin: 30px;
+    color: rgb(20, 20, 20);
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 15px rgb(34, 34, 34);
+    border-radius: 5px;
+    flex-basis: 100%
+}
+
+#main-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.caja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.caja div{
+    flex-basis: 100%;
+}
+
+.title{
+    text-align: center;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(20, 20, 20);
+    margin: 20px;
+}
+
+body{
+    background-color: #dfdfdf;
+}
+
+.pagination{
+    display: flex;
+    width: 1000px;
+}
+
+.pagination li a{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pagination li a:hover {
+    color: #2a2c35;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 3%;
+}
+
+#limit-records {
+    height: 30px;
+    margin-right: 0;
+    background: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-center {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.botones button {
+    border-style: none !important;
+    border-color: white !important;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.botones button:hover {
+    background-color: #0077ff;
+    transition: 0.5s;
+}
+
+.boton {
+    width: 30px;
+}
+
+#start-btn {
+    margin-left: -200px;
+}
+
+.datosPoblacion {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.datosTitle {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.medidasPoblacion {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+}
+
+.medidasPoblacion .datosPoblacion div {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.titulosDatosPoblacion {
+    display: flex;
+    flex-direction: row;
+    max-width: 780px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.texto {
+    margin: 10px;
+}
+
+h7 {
+    color: #0077ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 3840px) {
+
+    #main-div div {
+        font-size: 120px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 72px;
+    }
+
+    h2{
+        font-size: 24px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    #main-div div {
+        font-size: 80px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 24px;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 1275px) {
+    #main-div {
+        flex-direction: column;
+    }
+
+    #main-div div {
+        font-size: 56px;
+        height: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 38px;
+    }
+
+    h2{
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main-div {
+        flex-direction: column;
+    }
+
+    #main-div div {
+        font-size: 50px;
+        height: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    h2{
+        
+        font-size: 14px;
+        margin-top: 0;
+    }
+}

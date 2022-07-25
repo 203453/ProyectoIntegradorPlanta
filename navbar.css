@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    box-sizing: border-box
+    !important
+}
+
+body,
+.body {
+    font-family: sans-serif;
+    padding: 90px 20px 0
+    !important
+}
+
+.header {
+    background-color: #0055ff;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0
+    !important
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto
+    !important
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none
+    !important
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 60px
+    !important
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none
+    !important
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content
+    !important
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px
+    !important
+}
+
+.nav-menu-link:hover {
+    background-color: #2a2c35;
+    transition: 0.5s
+    !important
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none
+    !important
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px
+        !important
+    }
+    
+    .header {
+        height: 60px
+        !important
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px
+        !important
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2a2c35;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(85% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s
+        !important
+    }
+    
+    .nav-menu-item {
+        line-height: 70px
+        !important
+    }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #091122
+        !important
+    }
+
+    .nav-toggle {
+        display: block
+        !important
+    }
+
+    .nav-menu_visible {
+        left: 0
+        !important
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none
+        !important
+    }
+}
